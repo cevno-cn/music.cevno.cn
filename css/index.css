@@ -107,8 +107,8 @@ body{
     align-items: center;
 }
 .comment_avatar_url{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
 }
