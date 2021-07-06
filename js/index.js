@@ -1,4 +1,4 @@
-$.get("https://v2.alapi.cn/api/comment",function(e,status){
+$.get("https://v2.alapi.cn/api/comment?token=sykjeNeeoerEOcLJ",function(e,status){
     $('.title').html("《" + e.data.title + "》");
     $('.image>img').attr("src", e.data.image);
     $('.author').html(" - " + e.data.author);
@@ -26,7 +26,7 @@ $(function(){
     $(".comment_nickname").dblclick(function(){
         $(".song .song_").css("animation","");
         // document.styleSheets[0].addRule('.song .song_::before', 'display:none');
-        $.get("https://v1.alapi.cn/api/comment",function(e,status){
+        $.get("https://v2.alapi.cn/api/comment?token=sykjeNeeoerEOcLJ",function(e,status){
             $('.title').html("《" + e.data.title + "》");
             $('.image>img').attr("src", e.data.image);
             $('.author').html(" - " + e.data.author);
